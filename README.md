@@ -1,7 +1,7 @@
 # paws
 (Work in Progress)
 
-[https://undeceive.net/](https://undeceive.net/)
+[https://undeceive-portfolio.netlify.app/](https://undeceive-portfolio.netlify.app/)
 
 ## Stack
 
@@ -32,6 +32,6 @@ MIT License.
 
 You can create your own homepage for free without notifying me by forking this project under the following conditions:
 
-- Add a link to [https://undeceive.net/](https://undeceive.net/)
+- Add a link to [https://undeceive-portfolio.netlify.app/](https://undeceive-portfolio.netlify.app/)
 
 ---
