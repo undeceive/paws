@@ -6,7 +6,6 @@
 ## Stack
 
 - [React](https://reactjs.org/) - A JavaScript library for building user interfaces
-- [Sass](https://sass-lang.com/) - Sass is the most mature, stable, and powerful professional grade CSS extension language in the world. 
 - [Sanity](https://www.sanity.io/) - unified content platform that powers better digital experiences
 - [Next.js](https://nextjs.org/) - A React framework with hybrid static & server rendering, and route pre-fetching, etc.
 
