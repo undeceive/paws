@@ -1,5 +1,5 @@
 # paws
-(Work in Progress)
+(The shop now buttons do not work, but the site is still operational while I work to resolve this issue.)
 
 [http://undeceive.io/](http://undeceive.io/)
 
