@@ -1,29 +1,36 @@
 import React from 'react';
 import Link from 'next/link';
 
-import { urlFor } from '../lib/client';
-
 const HeroBanner = ({ heroBanner }) => {
+  // Use fallback data if heroBanner is null or missing
+  const banner = heroBanner || {
+    smallText: 'Industrial Supply Co.',
+    midText: 'Quality since 2024',
+    largeText1: 'Industrial Supply Co.',
+    buttonText: 'Shop Now',
+    desc: 'Premium industrial supplies for welding, safety equipment, tools, and hardware.'
+  };
+
   return (
     <div className="hero-banner-container">
       <div>
-        <p className="paws">{heroBanner.smallText}</p>
-        <h3>{heroBanner.midText}</h3>
-        <h1>{heroBanner.largeText1}</h1>
-        <img src={urlFor(heroBanner.image)} alt="logo" className="hero-banner-image" />
+        <p className="paws">{banner.smallText}</p>
+        <h3>{banner.midText}</h3>
+        <h1>{banner.largeText1}</h1>
+        <p className="hero-subtext">Welding • Safety • Tools • Hardware</p>
 
         <div>
-          <Link href={`/product/${heroBanner.product}`}>
-            <button type="button">{heroBanner.buttonText}</button>
+          <Link href="/">
+            <button type="button">{banner.buttonText}</button>
           </Link>
           <div className="desc">
-            <h5>Description</h5>
-            <p>{heroBanner.desc}</p>
+            <h5>For Professionals</h5>
+            <p>{banner.desc}</p>
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default HeroBanner
+export default HeroBanner;

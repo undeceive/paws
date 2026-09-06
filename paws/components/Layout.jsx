@@ -1,26 +1,19 @@
 import React from 'react';
-import Head from 'next/head';
-
 import Navbar from './Navbar';
+import Cart from './Cart';
 import Footer from './Footer';
 
 const Layout = ({ children }) => {
   return (
-    <div className="layout">
-      <Head>
-        <title>Paws</title>
-      </Head>
-      <header>
-        <Navbar />
-      </header>
-      <main className="main-container">
-      {children}
-      </main>
-      <footer>
-        <Footer/>
-      </footer>
+    <div className="main-container">
+      <Navbar />
+      <Cart />
+      <div className="layout">
+        {children}
+      </div>
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

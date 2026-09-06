@@ -1,25 +1,25 @@
-import react from 'react';
+import React from 'react';
 import Link from 'next/link';
 
-import { urlFor } from '../lib/client';
+const Product = ({ product }) => {
+  const { name, slug, price } = product;
 
-const Product = ({ product: { image, name, slug, price } }) => {
+  // Use a placeholder image since we don't have real images
+  const placeholderImage = 'https://placehold.co/300x300/0a1628/f59e0b?text=Industrial+Supply';
+
   return (
-    <div>
-      <Link href={`/product/${slug.current}`}>
-        <div className="product-card">
-         <img
-           src={urlFor(image && image[0])}
-           width={250}
-           height={250}
-           className="product-image"
-         />
-          <p className="product-name">{name}</p>
-          <p className="product-price">${price}</p>
-        </div>
-      </Link>
-    </div>
-  )
-}
+    <Link href={`/product/${slug.current}`}>
+      <div className="product-card">
+        <img
+          src={placeholderImage}
+          alt={name}
+          loading="lazy"
+        />
+        <p className="product-name">{name}</p>
+        <p className="product-price">${price}</p>
+      </div>
+    </Link>
+  );
+};
 
-export default Product
+export default Product;
