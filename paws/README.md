@@ -1,34 +1,164 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Industrial Supply Co.
 
-First, run the development server:
+A modern e-commerce demo for industrial supplies — welding equipment, safety gear, tools, and hardware.
 
+**Live Demo:** https://paws-undeceive.vercel.app/
+
+## 🏗️ Project Status
+
+**Currently in development.** This is a portfolio demo showcasing full-stack e-commerce capabilities.
+
+### ✅ Working Features
+- Product catalog with 8+ industrial products
+- Product detail pages
+- Shopping cart with quantity controls
+- Add/remove items from cart
+- Responsive dark theme with orange/amber accents
+
+### 🚧 In Progress
+- Stripe checkout integration
+- Product image gallery
+- "You may also like" recommendations
+- Mobile responsiveness polish
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|------------|---------|
+| **React** | UI library |
+| **Next.js** | React framework with SSR/SSG |
+| **Stripe** | Payment processing |
+| **CSS Modules** | Styling |
+
+---
+
+## 🚀 Getting Started
+
+### Clone the repository
 ```bash
-npm run dev
-# or
-yarn dev
+git clone git@github.com:undeceive/paws.git
+cd paws/paws
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Install dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Run the development server
+```bash
+npm run dev -- -p 3002
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### Open your browser
+```
+http://localhost:3002
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+---
 
-## Learn More
+## 📁 Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+paws/
+├── pages/          # Next.js pages
+│   ├── index.js    # Homepage
+│   └── product/    # Product detail pages
+├── components/     # React components
+│   ├── Navbar.jsx
+│   ├── Cart.jsx
+│   ├── Product.jsx
+│   └── Layout.jsx
+├── context/        # State management
+│   └── StateContext.js
+├── lib/            # Utilities and mock data
+│   └── mockData.js
+├── public/         # Static assets
+├── styles/         # CSS styles
+└── README.md       # This file
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 📋 Features
 
-## Deploy on Vercel
+### Product Catalog
+- 8 industrial products (welding, safety, tools, hardware)
+- Product names, prices, and descriptions
+- Placeholder images (real images coming soon)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Shopping Cart
+- Add items to cart
+- Adjust quantities with +/- buttons
+- Remove items from cart
+- Real-time total price calculation
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Checkout (Coming Soon)
+- Stripe payment integration
+- Order confirmation
+
+---
+
+## 🔧 Environment Variables
+
+For Stripe checkout (not yet configured):
+
+```
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=your_stripe_key
+STRIPE_SECRET_KEY=your_stripe_secret
+```
+
+---
+
+## 🤝 Contributing
+
+This is a personal portfolio project, but feel free to fork it for your own learning!
+
+### Forking Conditions
+- Add a link to: [https://portfolio-undeceives-projects.vercel.app/](https://portfolio-undeceives-projects.vercel.app/)
+
+---
+
+## 📄 License
+
+MIT License — feel free to use, modify, and distribute.
+
+---
+
+## 👤 Author
+
+**Frank Garcia Sarmiento**
+
+- GitHub: [@undeceive](https://github.com/undeceive)
+- Portfolio: [https://portfolio-undeceives-projects.vercel.app/](https://portfolio-undeceives-projects.vercel.app/)
+- Medium: [@undeceive](https://medium.com/@undeceive)
+
+---
+
+## 🎯 Why This Project?
+
+This demo was built to showcase:
+- Full-stack e-commerce development
+- React/Next.js proficiency
+- Payment integration experience
+- Clean, professional UI design
+- Problem-solving with real business needs
+
+It's designed to impress potential employers and clients, including Charles at HYW Products.
+
+---
+
+## 📸 Screenshots
+
+*Coming soon!*
+
+---
+
+## 🔗 Links
+
+- **Live Demo:** https://paws-undeceive.vercel.app/
+- **GitHub:** https://github.com/undeceive/paws
+- **Portfolio:** https://portfolio-undeceives-projects.vercel.app/
